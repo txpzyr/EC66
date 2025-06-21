@@ -1,0 +1,117 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="RobotArm" version="2" target="8">
+  <configuration Name="Internal" Platform="ARM" hidden="Yes" />
+  <configuration Name="RobotArm" hidden="Yes" />
+  <configuration
+    Name="RobotArm Internal"
+    debug_target_connection="J-Link"
+    inherited_configurations="Internal;RobotArm"
+    linker_printf_fp_enabled="Float"
+    linker_printf_width_precision_supported="Yes"
+    speed="30" />
+  <project Name="RobotArm">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_compiler_variant="SEGGER"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_variant="SEGGER"
+      arm_target_device_name="STM32F405RG"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      link_linker_script_file="$(StudioDir)/samples/SEGGER_Flash.icf"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000;"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="External Keil ARMCC"
+      asm_additional_options="--cpu;Cortex-M4"
+      c_additional_options="--cpu;Cortex-M4;--C99;-O3;--split_sections;-g"
+      linker_additional_options="--cpu;Cortex-M4" />
+    <configuration
+      LIBRARY_IO_TYPE="SEMIHOST (host-formatted)"
+      Name="Internal" />
+    <configuration
+      Name="RobotArm"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_target_device_name="STM32F405RG"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32F405xx"
+      c_user_include_directories="Core/Inc;Drivers/STM32F4xx_HAL_Driver/Inc;Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;Drivers/CMSIS/Device/ST/STM32F4xx/Include;Drivers/CMSIS/Include"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000;" />
+    <configuration
+      Name="RobotArm Internal"
+      linker_output_format="bin"
+      linker_printf_fp_enabled="Float"
+      linker_printf_wchar_enabled="Yes"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fp_enabled="Yes"
+      linker_section_placements_segments="FLASH1 RX 0x08020000 0x00100000;RAM1 RWX 0x20000000 0x00020000;"
+      speed="2000" />
+    <folder Name="Application/MDK-ARM">
+      <file file_name="startup_stm32f405xx.s">
+        <configuration Name="Internal" build_exclude_from_build="Yes" />
+      </file>
+    </folder>
+    <folder Name="Application/User/Core">
+      <file file_name="Core/Src/angle.c" />
+      <file file_name="Core/Inc/angle.h" />
+      <file file_name="Core/Src/brake.c" />
+      <file file_name="Core/Src/control.c" />
+      <file file_name="Core/Inc/control.h" />
+      <file file_name="Core/Src/foc.c" />
+      <file file_name="Core/Inc/foc.h" />
+      <file file_name="Core/Inc/header.h" />
+      <file file_name="Core/Src/helper.c" />
+      <file file_name="Core/Inc/helper.h" />
+      <file file_name="Core/Src/IR2181.c" />
+      <file file_name="Core/Inc/IR2181.h" />
+      <file file_name="Core/Src/mag.c" />
+      <file file_name="Core/Inc/mag.h" />
+      <file file_name="Core/Src/main.c" />
+      <file file_name="Core/Src/mu_1sf_driver.c" />
+      <file file_name="Core/Inc/mu_1sf_driver.h" />
+      <file file_name="Core/Src/serial.c" />
+      <file file_name="Core/Inc/serial.h" />
+      <file file_name="Core/Src/stm32f4xx_hal_msp.c" />
+      <file file_name="Core/Src/stm32f4xx_it.c" />
+      <file file_name="Core/Src/user.c" />
+      <file file_name="Core/Inc/user.h" />
+    </folder>
+    <folder Name="Drivers/CMSIS">
+      <file file_name="Core/Src/system_stm32f4xx.c" />
+    </folder>
+    <folder Name="Drivers/STM32F4xx_HAL_Driver">
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" />
+      <file file_name="Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c" />
+    </folder>
+    <folder Name="Internal Files">
+      <file file_name="$(StudioDir)/samples/Cortex_M_Startup.s" />
+      <file file_name="$(StudioDir)/samples/SEGGER_THUMB_Startup.s" />
+    </folder>
+  </project>
+</solution>

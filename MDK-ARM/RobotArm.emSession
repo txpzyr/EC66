@@ -1,0 +1,86 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBuffer>
+  <FrameBufferWindow width="679571392" keepAspectRatio="0" zoomToFitWindow="0" addressSpace="" format="0" height="677" autoEvaluate="0" scaleFactor="1" refreshPeriod="0" name="RobotArm_RobotArm Internal" addressText="" accessByDisplayWidth="0"/>
+ </FrameBuffer>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="RobotArm_RobotArm Internal" sizeText="" addressText="0x40012000"/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="RobotArm_RobotArm Internal" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="RobotArm_RobotArm Internal" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="RobotArm_RobotArm Internal" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="RobotArm"/>
+  <ProjectSessionItem path="RobotArm;RobotArm"/>
+  <ProjectSessionItem path="RobotArm;RobotArm;Application/MDK-ARM"/>
+  <ProjectSessionItem path="RobotArm;RobotArm;Application/User/Core"/>
+  <ProjectSessionItem path="RobotArm;RobotArm;Drivers/CMSIS"/>
+  <ProjectSessionItem path="RobotArm;RobotArm;Drivers/STM32F4xx_HAL_Driver"/>
+  <ProjectSessionItem path="RobotArm;RobotArm;Internal Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal;CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr" binaryNodes="" asciiNodes="" openNodes="CPU;CPU - Current Context" name="RobotArm_RobotArm Internal" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RobotArm_RobotArm Internal" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RobotArm_RobotArm Internal" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RobotArm_RobotArm Internal" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="htim1" name="htim1" radix="-1" linenumber="279" filename="../Core/Src/stm32f4xx_it.c"/>
+   <Watchpoint expression="i1" name="i1" radix="-1" linenumber="218" filename="../Core/Src/stm32f4xx_it.c"/>
+   <Watchpoint expression="i2" name="i2" radix="-1" linenumber="219" filename="../Core/Src/stm32f4xx_it.c"/>
+   <Watchpoint expression="light_tick" name="light_tick" radix="10" linenumber="795" filename="../Core/Src/main.c"/>
+   <Watchpoint expression="ui1>>4" name="ui1>>4" radix="10" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="angle" name="angle" radix="10" linenumber="21" filename="../Core/Src/mag.c"/>
+   <Watchpoint expression="values" name="values" radix="-1" linenumber="17" filename="../Core/Src/mag.c"/>
+   <Watchpoint expression="kpd * distance + kid * iDist" name="kpd * distance + kid * iDist" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="rxEnd" name="rxEnd" radix="10" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="receive_buffer" name="receive_buffer" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="answeredMotor" name="answeredMotor" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="recvData" name="recvData" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="recvData.P" name="recvData.P" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="setV" name="setV" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="Iq" name="Iq" radix="-1" linenumber="0" filename="../MDK-ARM"/>
+   <Watchpoint expression="start_time" name="start_time" radix="10" linenumber="0" filename="../MDK-ARM"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="92" useTextEdit="1" path="../Core/Src/main.c" left="0" top="76" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="339" useTextEdit="1" path="../Core/Src/foc.c" left="0" top="334" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="73" useTextEdit="1" path="../Core/Src/user.c" left="0" top="66" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="79" useTextEdit="1" path="../Core/Src/control.c" left="0" selected="1" top="60" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="7" y="18" useTextEdit="1" path="../Core/Inc/serial.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="131" useTextEdit="1" path="../Core/Src/serial.c" left="0" top="115" codecName="Default"/>
+ </Files>
+ <EMStudioWindow activeProject="RobotArm" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="RobotArm Internal" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/run/study/RobotArm/Core/Src" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>

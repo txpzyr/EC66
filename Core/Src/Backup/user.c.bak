@@ -1,0 +1,95 @@
+#include "user.h"
+#include "brake.h"
+#include "header.h"
+
+
+float hallAngleDif = PI * 57.9 / 180;;    //  第1个
+
+
+extern ADC_HandleTypeDef hadc1;
+extern TIM_HandleTypeDef htim1;
+extern u16 adcDatas[2];
+
+void User_Init(void)
+{
+
+
+  brake_init();
+  HAL_ADC_Start_DMA(&hadc1, (u32*)adcDatas, 2);
+  //HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_4);
+  HAL_ADCEx_InjectedStart(&hadc1);
+
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+  //HAL_TIM_Base_Start_IT(&htim1);
+
+  htim1.Instance->CCR4 = 100;
+
+
+  SerialInit();
+
+  brake_release();
+  IR2181_init();
+
+  
+  foc_init();
+  
+  __HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
+
+    
+
+}
+
+i8 ID = -1;
+u8 getID(void)
+{
+  u8 b1 = HAL_GPIO_ReadPin(key1_GPIO_Port, key1_Pin);
+  u8 b2 = HAL_GPIO_ReadPin(key2_GPIO_Port, key2_Pin);
+  u8 b3 = HAL_GPIO_ReadPin(key3_GPIO_Port, key3_Pin);
+  u8 b4 = HAL_GPIO_ReadPin(key4_GPIO_Port, key4_Pin);
+  ID = (b4 << 3) | (b3 << 2) |  (b2 << 1) |  (b1 << 0);
+
+  //switch (ID) {
+  //  case 1:
+  //    hallAngleDif = PI * 150.9 / 180;
+  //  break;
+  //  case 2:
+  //    hallAngleDif = PI * 180.9 / 180;
+  //  break;
+  //  case 3:
+  //    hallAngleDif = PI * 306.9 / 180;
+  //  break;
+  //  case 4:
+  //    hallAngleDif = PI * 306.9 / 180;
+  //  break;
+  //  case 5:
+  //    hallAngleDif = PI * 306.9 / 180;
+  //  break;
+  //  case 6:
+  //    hallAngleDif = PI * 306.9 / 180;
+  //  break;
+  //}
+
+    switch (ID) {
+    case 1:
+      hallAngleDif = PI * 57.9 / 180;
+    break;
+    case 2:
+      hallAngleDif = PI * 306.9 / 180;
+    break;
+    case 3:
+      hallAngleDif = PI * 306.9 / 180;
+    break;
+    case 4:
+      hallAngleDif = PI * 306.9 / 180;
+    break;
+    case 5:
+      hallAngleDif = PI * 306.9 / 180;
+    break;
+    case 6:
+      hallAngleDif = PI * 306.9 / 180;
+    break;
+  }
+
+
+  return ID;
+}
